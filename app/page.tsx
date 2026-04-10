@@ -1,12 +1,13 @@
-import { Button } from "@/components/ui/button";
-import { UserButton } from "@clerk/nextjs";
+import BackgroundGradient from "../components/background/background-gradient";
+import Header from "./_shared/header";
+import Hero from "./_shared/hero";
 
 export default function Home() {
   return (
     <div className="text-foreground">
-      <Button variant={"secondary"}>Hello</Button>
-      <p>Subscribe</p>
-      <UserButton />
+      <Header />
+      <Hero />
+      <BackgroundGradient />
     </div>
   );
 }
